@@ -1,0 +1,19 @@
+name: Check Results
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make coverage
+      run: make CXXFLAGS=--coverage LDFLAGS="--coverage -lm" check
+    - name: upload coverage
+      run: bash <(curl -s https://codecov.io/bash)
