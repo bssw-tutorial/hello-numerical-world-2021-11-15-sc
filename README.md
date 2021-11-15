@@ -1,5 +1,7 @@
 # Hello Numerical World
 
+### Notes
+
 **NOTE:** This repo was [*imported*](https://docs.github.com/en/github/importing-your-projects-to-github/importing-a-repository-with-github-importer) from [here](https://github.com/markcmiller86/hello-numerical-world.git) 
 
 [![Build Status](https://travis-ci.com/betterscientificsoftware/hello-numerical-world.svg?branch=main)](https://travis-ci.com/betterscientificsoftware/hello-numerical-world) [![codecov](https://codecov.io/gh/betterscientificsoftware/hello-numerical-world/branch/main/graph/badge.svg)](https://codecov.io/gh/betterscientificsoftware/hello-numerical-world)
@@ -22,12 +24,12 @@ is known as the _Diffusion Equation_ and also the [_Heat Equation_](https://en.w
 
 ### Simplifying Assumptions
 
-To make the problem tractable for this lesson, we make some simplifying assumptions...
+To make the problem tractable for this lesson, we make some simplifying assumptions:
 
 1. The thermal diffusivity, ![](http://latex.codecogs.com/gif.latex?%5Calpha),
    is constant for all _space_ and _time_.
-1. The only heat _source_ is from the initial and/or boundary conditions.
-1. We will deal only with the _one dimensional_ problem in _Cartesian coordinates_.
+2. The only heat _source_ is from the initial and/or boundary conditions.
+3. We will deal only with the _one dimensional_ problem in _Cartesian coordinates_.
 
 In this case, the PDE our application needs to solve simplifies to...
 
